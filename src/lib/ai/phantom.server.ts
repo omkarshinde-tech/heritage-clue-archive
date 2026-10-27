@@ -120,7 +120,7 @@ function fmt(sec: number) {
 }
 
 export async function analyzeTranscript(input: { transcript: string; durationSec: number; fileName: string }) {
-  const provider = createLovableAiGatewayProvider(apiKey(), undefined, { baseURL: GATEWAY });
+  const provider = createLovableAiGatewayProvider(apiKey(), undefined, { baseURL: GATEWAY, structuredOutputs: true });
   const prompt = `You are a careful heritage archivist analysing an old recording for a Halloween-themed "mystery archive".
 Never claim anything supernatural is real; treat eerie elements as folklore or storytelling.
 
