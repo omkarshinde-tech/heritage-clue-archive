@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- AI analysis/Q&A live in src/lib/ai/phantom.server.ts (Gemini via Lovable AI Gateway chat completions, structuredOutputs on); case files persist in browser localStorage via src/lib/vault-store.ts — no backend database yet.
