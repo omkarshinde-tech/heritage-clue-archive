@@ -1,4 +1,4 @@
-// Haunted heritage archive (PhantomVault AI)
+// Haunted heritage archive (PhantomVault AI) — local case-file store
 import { useSyncExternalStore } from "react";
 
 export type Clue = { kind: string; title: string; detail: string; quote: string; time: string; solved?: boolean };
