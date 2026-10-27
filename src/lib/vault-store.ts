@@ -1,3 +1,4 @@
+// Haunted heritage archive (PhantomVault AI)
 import { useSyncExternalStore } from "react";
 
 export type Clue = { kind: string; title: string; detail: string; quote: string; time: string; solved?: boolean };
