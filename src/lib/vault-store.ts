@@ -68,3 +68,6 @@ export function timeToSec(t: string) {
   if (parts.some(isNaN)) return 0;
   return parts.reduce((a, b) => a * 60 + b, 0);
 }
+
+/** Session-only media blobs so evidence timestamps can be played back. */
+export const mediaUrls = new Map<string, { url: string; isVideo: boolean }>();
