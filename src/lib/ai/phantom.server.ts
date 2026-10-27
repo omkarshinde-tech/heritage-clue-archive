@@ -14,7 +14,7 @@ export class GatewayError extends Error {
 }
 
 function apiKey() {
-  const key = process.env.LOVABLE_API_KEY;
+  const key = process.env['LOVABLE_API_KEY'];
   if (!key) throw new GatewayError(500, "AI is not configured (missing key).");
   return key;
 }
